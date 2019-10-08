@@ -40,7 +40,17 @@ Examples:
 * {} ➞ true
 * {a: 1} ➞ false
 
-**5. Programming Object.**
+**Bonus:** Discuss in a comment the use case of `Object.is()` for this program.
+
+**5. Free Shipping.**
+Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50. 
+
+Examples:
+* freeShipping({ "Sponge": 3.50, "Soap": 5.99 }) ➞ false
+* freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true
+* freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false
+
+**6. Programming Object.**
 
 ```javascript
 var programming = {
@@ -60,14 +70,5 @@ var programming = {
 * Using a loop, iterate through the languages array and console.log all of the languages.
 * Using a loop, console.log all of the keys in the programming object.
 * Using a loop, console.log all of the values in the programming object.
-* Create an object method where if the keys "isChallenging" and "isRewarding" have values of "true", then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging. 
+* Create an object method where if the keys "isChallenging" and "isRewarding" have values of "true", then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging. **Bonus:** In a comment, explain the use case of `console.log()` on an object method.
 * Make sure that any other code cannot delete or change properties of the object. 
-* Print the prototype of the object. 
-
-**6. Free Shipping.**
-Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50. 
-
-Examples:
-* freeShipping({ "Sponge": 3.50, "Soap": 5.99 }) ➞ false
-* freeShipping({ "Surround Sound Equipment": 499.99 }) ➞ true
-* freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }) ➞ false
