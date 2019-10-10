@@ -53,7 +53,7 @@ Examples:
 **6. Programming Object.**
 
 ```javascript
-var programming = {
+let programming = {
     languages: ["JavaScript", "Python", "Ruby"],
     isChallenging: true,
     isRewarding: true,
