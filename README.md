@@ -10,15 +10,7 @@ Examples:
 * 4, { min: 6, max: 10 }) ➞ false
 * 5, { min: 5, max: 5 }) ➞ true
 
-
-**2. Return Keys and Values.**
-Write a program that takes an object and returns the keys and values in separate arrays. 
-
-Examples: 
-* { a: 1, b: 2, c: 3 } ➞ ["a", "b", "c"], [1, 2, 3]
-* {key: true} ➞ ["key"], [true]
-
-**3. Scrabble.**
+**2. Scrabble.**
 Write a program that, given an array of scrabble tiles, counts the maximum score that a player can earn from the tiles in their hand. 
 Example: 
 [
@@ -33,7 +25,7 @@ Example:
 
 The player's maximum score: 1 + 5 + 10 + 8 + 2 + 1 + 1 = 28
 
-**4. Is it an empty object?**
+**3. Is it an empty object?**
 Write a program that returns true if an object is empty, and false if otherwise. 
 
 Examples: 
@@ -41,6 +33,12 @@ Examples:
 * {a: 1} ➞ false
 
 **Bonus:** Discuss in a comment the use case of `Object.is()` for this program.
+
+**4. Counting Letters.**
+Create a function that counts the number of occurrences of each letter in a string. 
+
+i.e. 
+countLetters("tree") ➞ t: 1, r: 1, e: 2
 
 **5. Free Shipping.**
 Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50. 
@@ -53,7 +51,7 @@ Examples:
 **6. Programming Object.**
 
 ```javascript
-let programming = {
+var programming = {
     languages: ["JavaScript", "Python", "Ruby"],
     isChallenging: true,
     isRewarding: true,
