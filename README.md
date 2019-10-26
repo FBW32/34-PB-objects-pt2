@@ -52,7 +52,7 @@ Examples:
 **6. Programming Object.**
 
 ```javascript
-var programming = {
+const programming = {
   languages: ["JavaScript", "Python", "Ruby"],
   isChallenging: true,
   isRewarding: true,
