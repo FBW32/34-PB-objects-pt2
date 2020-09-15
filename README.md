@@ -74,3 +74,6 @@ const programming = {
 
 **Bonus**:
 - Make sure that any other code cannot delete or change properties of the object.
+
+**Hint:**
+Refer to Object.keys, Object.values, Object.entries, Object.fromEntries, Object.assign and Object.getOwnPropertyNames for these exercises.
