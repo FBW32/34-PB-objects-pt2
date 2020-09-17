@@ -186,7 +186,9 @@ freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 });
 
 console.log("")
 console.log("QUESTION 6. Programming Object.")
+
 // ```javascript
+
 // const programming = {
 //   languages: ["JavaScript", "Python", "Ruby"],
 //   isChallenging: true,
@@ -195,17 +197,83 @@ console.log("QUESTION 6. Programming Object.")
 //   jokes:
 //     "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
 // };
+
 // ```
 
+
+const programming = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes:
+        "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
+};
+
 // - Write the command to add the language "Go" to the end of the languages array.
+let newLanguages = programming.languages.concat(['Go']);
+programming['languages'] = newLanguages;
+
 
 // - Change the difficulty to the value of 7.
+programming['difficulty'] = 7;
+
+
 // - Using the delete keyword, write the command to remove the jokes key from the programming object.
+delete programming["jokes"]
+
+
 // - Write a command to add a new key called isFun and a value of true to the programming object.
+programming["isFun"] = true;
+
+console.log(programming);
+
+
 // - Using a loop, iterate through the languages array and console.log all of the languages.
+console.log("")
+for (let k in programming.languages) {
+    console.log(programming.languages[k])
+}
+
+
 // - Using a loop, console.log all of the keys in the programming object.
+console.log("")
+console.log("")
+for (k in programming) {
+    console.log(k)
+}
+
+
+
 // - Using a loop, console.log all of the values in the programming object.
+console.log("")
+console.log(Object.values(programming))
+
+
 // - Create an object method where if the keys "isChallenging" and "isRewarding" have values of "true", then return "Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging. **Bonus:** In a comment, explain what is printed if we console.log an object method without calling it and why.
+
+programming["isTrueOr"] = (result) => {
+    if (result === true) {
+        return `Learning the programming languages: "JavaScript, Python, Ruby, Go" is rewarding and challenging.`
+    }
+    else {
+        return `It's not really that rewarding...or isn't it?!?!?!?`
+    }
+};
+console.log(programming)
+
+console.log("")
+console.log(`Is it challenging? ===> ${programming.isChallenging}`);
+console.log(programming.isTrueOr(programming.isChallenging));
+
+console.log("")
+console.log(`Is it rewarding? ===> ${programming.isRewarding}`);
+console.log(programming.isTrueOr(programming.isRewarding));
+
+
 
 // **Bonus**:
 // - Make sure that any other code cannot delete or change properties of the object.
+
+
+
